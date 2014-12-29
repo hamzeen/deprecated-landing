@@ -1,3 +1,4 @@
+
 div#lower .timestamp{color:#ffffff;}
 div#lower div{font-family: 'Titillium Web', sans-serif;font-size: 0.9em;}
 div#lower p, div#footer p{font-size:19px;}
@@ -5,6 +6,53 @@ div#hero p{font-size:20px;text-align:justify}
 div#lower .medium-4 h3{font-size:25px;}
 div#lower .large-12 h3{text-align: right;float: right}
 
+#socribbon{
+    //border:1px solid #fff;
+    float:right;
+    right:20px;top:400px;
+    position:absolute;
+    height:130px;width: 178px;
+    overflow: hidden;
+}
+#vimeo {
+    position:absolute;
+    right:47px;
+    top:46px;
+}
+
+#twitter {
+    position:absolute;
+    right:93px;
+    top:0px;
+}
+
+#socribbon div {
+    float:right;
+    height:60px;width:60px;
+    color:#40f2f2;
+    background:#402222;
+    margin:12px;
+
+    transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+div#socribbon p{
+    //border:1px solid #6f6f6f;
+    font-size: 29px;
+    padding-top: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+div#socribbon :hover {
+    background:#c88222;
+}
 
 #home {
     margin: 0 auto;
