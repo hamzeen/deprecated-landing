@@ -6,10 +6,84 @@ div#hero p{font-size:20px;text-align:justify}
 div#lower .medium-4 h3{font-size:25px;}
 div#lower .large-12 h3{text-align: right;float: right}
 
+#shapes .logo {
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #333333;
+    border-left: 300px solid transparent;
+    top: 720px;
+    right: 200px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    z-index: 20;
+}
+
+@media screen and (max-width: 500px) {
+    #shapes{
+        display:none;
+    }
+}
+
+/*@media screen and (max-width: 415px) {
+	#concentrations{
+		display:none;
+	}
+}*/
+
+#shapes .mask1 {
+    background: #fff;
+    -webkit-transition: background .25s ease .2s;
+    -moz-transition: background .25s ease .2s;
+    -o-transition: background .25s ease .2s;
+    -ms-transition: background .25s ease .2s;
+    transition: background .25s ease .2s;
+}
+
+div#diamond{
+    height: 300px;width: 470px;
+    right: -330px;
+    position: absolute;
+    overflow: hidden;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+
+    -moz-box-shadow: -0.8em .6em .3em rgba(13,12,13,0.7);
+    -webkit-box-shadow: -0.8em .6em .3em rgba(13,12,13,0.7);
+    box-shadow: -0.8em .6em .3em rgba(13,12,13,0.7);
+
+    background: #430216;
+}
+
+#shapes .mask1 {
+    height: 350px;width: 540px;
+    margin-left: 0px;left: -85px;
+    top: -120px;position: absolute;
+    z-index: 0;
+
+    background: #430216;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+
+    -moz-box-shadow: -0.8em .6em .3em rgba(213,112,13,0.1);
+    -webkit-box-shadow: -0.8em .6em .3em rgba(213,112,13,0.1);
+    box-shadow: -0.8em .6em .3em rgba(213,112,113,0.15);
+    overflow: hidden;
+}
+
 #socribbon{
     //border:1px solid #fff;
     float:right;
-    right:20px;top:400px;
+    right:20px;top:402px;
     position:absolute;
     height:130px;width: 178px;
     overflow: hidden;
@@ -66,7 +140,7 @@ div#socribbon :hover {
     text-align: center;
     position: absolute;
     font-size: 300%;
-    top: 60px;
+    top: 30px;
     width: 100%;
 }
 #welcome h3 {
@@ -79,17 +153,15 @@ div#socribbon :hover {
     padding: 3px;
 }
 #welcome p {
-    left: 100px;
-    top: 180px;
     font-family: open-sans-condensed, Helvetica, sans-serif;
-    line-height: 138%;
+    line-height: 130%;
     color: #f2f2f2;
     font-style: normal;
     font-weight: 200;
-    padding-left: 17px;
+    padding-left: 5px;
     padding-right: 17px;
     padding-bottom: 17px;
-    padding-top: 10px;
+    padding-top: 5px;
     height: auto;
 }
 
