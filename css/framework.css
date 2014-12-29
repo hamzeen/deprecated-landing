@@ -124,7 +124,7 @@ div#socribbon :hover {
     height: 250px;
     text-align: center;
     position: absolute;
-    font-size: 270%;
+    font-size: 272%;
     top: 21px;
     width: 100%;
 }
@@ -139,7 +139,7 @@ div#socribbon :hover {
 }
 #welcome p {
     font-family: open-sans-condensed, Helvetica, sans-serif;
-    line-height: 124%;
+    line-height: 128%;
     color: #f2f2f2;
     font-style: normal;
     font-weight: 200;
