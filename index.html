@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+	<link rel="shortcut icon" href="favicon.png" />   
+	<link rel="icon" href="favicon.png" />
+	<title>Hamzeen. H.</title>
+    
+	<!-- Fonts //-->
+	<link rel='stylesheet' id='heading_font-css'  href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A300&#038;ver=3.5' type='text/css' media='all' />
+   <link rel='stylesheet' id='body_font-css'  href='http://fonts.googleapis.com/css?family=Titillium+Web%3Aregular&#038;ver=3.5' type='text/css' media='all' />
+   <link rel="stylesheet" href="http://use.edgefonts.net/c/5af265/open-sans-condensed:i3:n3:n7.Wky:J:2,Wkx:J:2,Wkw:J:2/d">
+	
+	
+	<!-- Style sheets //-->
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="assets/swirl.css" rel="stylesheet" type="text/css">
+	
+	<!-- JS //-->
+    <script type="text/javascript" src="assets/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="assets/strftime.js"></script>
+
+	<!--[if lt IE 7]><script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE7.js" type="text/javascript"></script><![endif]-->		
+	<!-- Slider //-->
+	<script type="text/javascript" src="assets/jquery.cycle.all.min.js"></script>
+
+	<!-- Used to fetch recent posts from the blog //-->
+	<script src="assets/jquery.feeds.js" type="text/javascript"></script>
+	<script src="assets/swirl.js"></script>
+
+	<!-- Location on Map //-->
+	
+	<script type="text/javascript">
+		jQuery('#promos').cycle({ 
+			fx:     'fade', 
+			speed:  1000, 
+			timeout: 3000,
+			pager: '#promo-nav',
+			pause: 1,
+			height: 300,
+			pauseOnPagerHover: 1,
+			fastOnEvent: 350,
+			next:   '#nxt', 
+			prev:   '#prv', 
+			pagerAnchorBuilder: function(idx, slide) { 
+				return "#promo-nav li:eq("+ idx +") a"; 
+			}
+		});
+	</script>
+	<!-- end of JS //-->
+  </head>
+
+  <body>
+    <div id="wrapper" class="grid clearfix">
+	<!--section header//-->
+	
+	<div id="logo-container">
+
+		<div style="height: 210px;float:left;width:84%;" id="decription">
+			<div class="section" id="welcome">
+		<article>
+			<div class="introcontainer" style="opacity: 1;">
+				<div id="boxhome" class="show-bottom">
+				  <figure class="front"><span>Generative&nbsp;Art</span></figure>
+				  <figure class="back"><span>Gestural&nbsp;Interfaces</span></figure>
+				  <figure class="top"><span>Tangible&nbsp;UIs</span></figure>
+				  <figure class="bottom"><span>Physical&nbsp;Computing</span></figure>
+				</div><!-- / box home -->
+			</div><!-- / introcontainer cube -->
+			
+			<h3><span>hi there!</span></h3>
+			<p>You have reached the portfolio of Hamzeen. H., an enthusiast of free and open source software. </p>
+		</article>
+			</div><!-- / weolcome -->
+		</div>
+		
+		<div id="socialWrap">
+		<ul class="social">
+			<!--<li><a class="facebook" target="_blank" href="https://www.facebook.com/shiftsrilanka">Facebook</a></li>//-->
+			<li><a class="twitter" target="_blank" href="https://twitter.com/hamzeen">Twitter</a></li>
+			<li><a class="vimeo" target="_blank" href="https://vimeo.com/hamzeen">Vimeo</a></li>
+		</ul>
+		</div>
+	</div><div style="clear:both"></div>
+	<!--end of header//-->
+
+	
+	
+	<!--slider start//-->
+		<div style="clear: both; margin-right: auto; margin-left: auto; height: 340px; width:938px;">
+			<div id="promos" style="position: relative; height: 300px; ">
+				<div class="promo" style="position: absolute; top: 0px; left: 0px; width: 938px; height: 300px; z-index: 7; opacity: 0; display: none; ">
+					<div class="slide_caption">Aerial Strings</div>
+					<a href="#"><img src="slides/slide001.jpg" alt="1"></a></div>
+				
+				<div class="promo hidden" style="position: absolute; top: 0px; left: 0px; width: 938px; height: 300px; z-index: 7; opacity: 0; display: none; ">
+					<div class="slide_caption">a tangible music composer</div>
+					<a href="#"><img src="slides/slide002.jpg" alt="2"></a></div>
+					
+				<div class="promo hidden" style="position: absolute; top: 0px; left: 0px; width: 938px; height: 300px; z-index: 7; opacity: 0; display: none; ">
+					<div class="slide_caption">Noise Paint</div>
+					<a href="#"><img src="slides/slide003.jpg" alt="3"></a></div>
+					
+				<div class="promo hidden" style="position: absolute; z-index: 8; top: 0px; left: 0px; display: block; width: 938px; height: 300px; opacity: 1; ">
+					<div class="slide_caption">a LeapMotion example</div>
+					<a href="#"><img src="slides/slide004.jpg" alt="4"></a></div>
+			</div>
+
+			<div id="promo-nav">
+				<ul>
+					<li><a href="#" class="">1</a></li>
+					<li><a href="#" class="">2</a></li>
+					<li><a href="#" class="">3</a></li>
+					<li><a href="#" class="activeSlide">4</a></li>
+					<li id="prv"><a href="#" class="">Previous</a></li>
+					<li id="nxt"><a href="#" class="">Next</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	<!--slider end//-->
+	<!--start Work//-->
+	<div id="recent-posts"></div>
+	<div style="clear:both"></div>
+
+	<!-- video thumbs from vimeo //-->
+	<div id="videos">
+	<h1>Video Reel on Vimeo</h1>
+
+		<div id="thumbs">Loading videos...</div>
+	</div>
+
+	<div id="work">
+	<ul class="projects">
+		<li class="active" id="projects"><a class="active" href="#">Work</a> &nbsp;|&nbsp; </li>
+		<li id="experiments"><a href="#"> Labs</a></li>
+	</ul>
+	<div style="clear:both"></div>
+
+				
+				<ul class='gallery' id="gallery1">
+				 <li>
+					<a class="preview_img" target="_blank" href='http://hamzeen.com/v2/' title=''>
+					<img src='projects/p5.jpg'  alt="" style="opacity: 1; "/>
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href='http://hamzeen.com/v2/' title=''>
+					<img src='projects/p4.jpg'  alt="" style="opacity: 1; "/>
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href='https://vimeo.com/65866393' title=''>
+					<img src='projects/p3.jpg'  alt="" style="opacity: 1; "/>
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href='http://hamzeen.com/v2/' title=''>
+					<img src='projects/p2.jpg'  alt="" style="opacity: 1; "/>
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									View Project
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" onClick="return false;" href="" title=''>
+					<img alt='' src='projects/p1.jpg' />
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									View Project
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li>
+				</ul>
+				
+				<!-- labs //-->
+				<ul class='gallery' id="gallery2">
+				 <li>
+					<a class="preview_img" target="_blank" href="http://hamzeen.com/experiments/PageFlip_fx/" title=''>
+					<img alt='' src='projects/l1.jpg' />
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href="http://hamzeen.com/experiments/jsinmotion/" title=''>
+					<img alt='' src='projects/l2.jpg' />
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href="http://hamzeen.com/experiments/gen_quads/" title=''>
+					<img alt='' src='projects/l3.jpg' />
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href="http://hamzeen.com/experiments/dither/" title=''>
+					<img alt='' src='projects/l4.jpg' />
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li><li>
+					<a class="preview_img" target="_blank" href="http://hamzeen.com/experiments/oilplate/" title=''>
+					<img alt='' src='projects/l5.jpg' />
+						<div class="hover_container" style="opacity: 0; top: 47%; ">
+							<div class="hover">
+								<div class="hover_left" style="margin-right: 10px; ">
+									Coming Soon
+									<div class="hover_left_bg"></div>
+								</div>
+								<div class="hover_right" style="margin-left: 10px; "></div>
+							</div>
+						</div>
+					</a>
+				 </li>
+				</ul>
+	<div style="clear:both;"></div>
+	</div>
+
+	<!-- About //-->
+	<div id="people">
+	<h1>About</h1>
+
+		<div id="about" class="profile">
+		<img id="1" src="people/1_gray.jpg"/>
+		<h2>Hamzeen. H. - Software Engineer</h2>
+			<p>Being a practitioner of Agile, He now counts over 5 years of experience in the industry and
+				has expertise on multitude of programming languages including Java, Processing, PHP and C++. In 2013, he wrote
+			<i>'ShortMessage'</i>, a library for Processing Development Environment. He thinks, <i>'math is art in disguise'</i>
+				and in his leisure, he enjoys reading, blogging or playing table tennis.</p>
+			<p><a href="http://github.com/hamzeen" target="_blank"> Github</a></p>
+			
+		</div>
+		<div style="clear:both;"></div>
+
+	</div>
+	<ul id="logos" class="menu" style="display:none;float:right;overflow-x: hidden; overflow-y: hidden;">
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/odel.jpg'></a>
+				<a title='ODEL' href="#" style="top: 0px;"><img height='30px' src='logos/odel.jpg'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/leoburnett.png'></a>
+				<a title='Leo Burnett' href="#" style="top: 0px;"><img height='30px' src='logos/leoburnett.png'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/triad.jpg'></a>
+				<a title='Triad' href="#" style="top: 0px;"><img height='30px' src='logos/triad.jpg'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/ogilvy.jpg'></a>
+				<a title='Ogilvy' href="#" style="top: 0px;"><img height='30px' src='logos/ogilvy.jpg'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/unilever_gray.png'></a>
+				<a title='Unilever' href="#" style="top: 0px;"><img height='30px' src='logos/unilever_gray.png'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/ntb_gray.png'></a>
+				<a title='Nations Trust Bank' href="#" style="top: 0px;"><img height='30px' src='logos/ntb_gray.png'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/chaya.jpg'></a>
+				<a title='Chaaya Hotels & Resorts' href="#" style="top: 0px;"><img height='30px' src='logos/chaya.jpg'></a></li>
+			<li id="menu-item">
+				<a href="#" style="top: 0px;"><img height='30px' src='logos/dialog.png'></a>
+				<a title='Dialog Axiata PLC' href="#" style="top: 0px;"><img height='30px' src='logos/dialog.png'></a></li>
+	</ul>
+	<div style="clear:both;"></div>
+
+	
+	<!-- tweets//-->
+	<div style="margin-bottom: 20px; margin-left:auto;margin-right:auto;width:758px;" id='featured_work'>
+		<p>&nbsp;</p>
+		<ul class="listticker" id="listticker">
+		</ul>
+	</div>
+	<div style="clear:both"></div><hr/>
+	<!-- end of tweets//-->
+
+	<div style="clear:both;"></div>
+
+	<div style="padding-bottom:4px;color:#fff;font-size: 13px;text-align:center;vertical-align:text-top;" id="copyrights">
+		<img style="margin-right: 20px; vertical-align:text-top;" src="assets/logo_d.jpg"/>Copyright &copy; 2013 - 2017 Hamzeen. H., Handcrafted.
+	</div>
+	<script src="roller.js"></script>
+  </body>
+</html>
